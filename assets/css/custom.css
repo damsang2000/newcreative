@@ -264,3 +264,6 @@ body {
 .himage-custom {
   height: 100% !important;
 }
+.custom-video {
+  object-fit: fill !important;
+}
