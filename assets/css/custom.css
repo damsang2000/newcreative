@@ -261,3 +261,6 @@ body {
 .tt-blog-post-content p {
   color: #7b7a7a !important;
 }
+.himage-custom {
+  height: 100% !important;
+}
