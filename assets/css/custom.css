@@ -272,7 +272,10 @@ body {
 .custom-video {
   object-fit: fill !important;
 }
-span,
+.text-menu,
 label {
   font-size: 16px !important;
+}
+.tt-ol-submenu-caret {
+  color: black !important;
 }
