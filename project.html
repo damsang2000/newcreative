@@ -240,8 +240,8 @@
                           </div>
                           <div class="tt-ol-submenu">
                             <ul class="tt-ol-submenu-list">
-                              <li>
-                                <a href="project_photo.html" id="photo"
+                              <li id="photo">
+                                <a href="project_photo.html" 
                                   >Photography</a
                                 >
                               </li>
@@ -1370,6 +1370,9 @@
     <!-- A jQuery plugin that adds cross browser mouse wheel support (https://github.com/jquery/jquery-mousewheel) -->
     <!-- Theme master JS -->
     <script src="./assets/js/theme.js"></script>
-    <script src="./assets/js/custom_ani.js"></script>
+    <script>
+
+      $('photo').click(console.log('hello'))
+    </script>
   </body>
 </html>
