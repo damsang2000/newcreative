@@ -2021,20 +2021,20 @@
 
     return false;
   });
- // Filter
- $(".ttgr-cat-list > li > a").on("click", function () {
-  var selector = $(this).attr("data-filter");
-  $container1.isotope({
-    filter: selector,
+  // Filter
+  $(".ttgr-cat-list > li > a").on("click", function () {
+    var selector = $(this).attr("data-filter");
+    $container1.isotope({
+      filter: selector,
+    });
+
+    // Refresh ScrollTrigger
+    setTimeout(function () {
+      ScrollTrigger.refresh(true);
+    }, 500);
+
+    return false;
   });
-
-  // Refresh ScrollTrigger
-  setTimeout(function () {
-    ScrollTrigger.refresh(true);
-  }, 500);
-
-  return false;
-});
   // Filter item active
   var filterItemActive = $(".ttgr-cat-list > li > a");
   filterItemActive.on("click", function () {
@@ -3193,7 +3193,7 @@
         );
         gsap.to($scrollbar1, {
           duration: 2,
-          scrollTo: { y: 400, autoKill: true },
+          scrollTo: { y: 600, autoKill: true },
           ease: Expo.easeInOut,
         });
       } else {
