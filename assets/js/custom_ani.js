@@ -10,4 +10,11 @@
 //   // use matching filter function
 //   iso.arrange({ filter: filterValue });
 // });
-
+// const button = $(".ttgr-cat-list > li > a");
+// button.on("click", function () {
+//   $(".isotope-item").each(function () {
+//     if ($(this).is(":hidden")) {
+//       $(this).hide();
+//     }
+//   });
+// });

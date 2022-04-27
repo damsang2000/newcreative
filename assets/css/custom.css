@@ -282,7 +282,19 @@ label {
 .element-item {
   position: none;
 }
-.isotope-item {
+.isotope-item1 {
   position: relative !important;
   top: 0 !important;
+}
+.pli-title {
+  text-align: left !important;
+}
+/* .pli-category {
+  text-align: left !important;
+} */
+.pli-categories-wrap {
+  text-align: left !important;
+}
+.pli-info {
+  padding-left: 15% !important;
 }

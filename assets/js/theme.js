@@ -1977,13 +1977,27 @@
   $container.imagesLoaded(function () {
     $container.isotope({
       itemSelector: ".isotope-item",
-      layoutMode: "vertical",
+      layoutMode: "packery",
       transitionDuration: "0.7s",
       percentPosition: true,
     });
 
     setTimeout(function () {
       $container.isotope("layout"); // Refresh Isotope
+      ScrollTrigger.refresh(true); // Refresh ScrollTrigger
+    }, 500);
+  });
+  var $container1 = $(".isotope-items-wrap1");
+  $container1.imagesLoaded(function () {
+    $container1.isotope({
+      itemSelector: ".isotope-item1",
+      layoutMode: "vertical",
+      transitionDuration: "0.7s",
+      percentPosition: true,
+    });
+
+    setTimeout(function () {
+      $container1.isotope("layout"); // Refresh Isotope
       ScrollTrigger.refresh(true); // Refresh ScrollTrigger
     }, 500);
   });
@@ -2007,7 +2021,20 @@
 
     return false;
   });
+ // Filter
+ $(".ttgr-cat-list > li > a").on("click", function () {
+  var selector = $(this).attr("data-filter");
+  $container1.isotope({
+    filter: selector,
+  });
 
+  // Refresh ScrollTrigger
+  setTimeout(function () {
+    ScrollTrigger.refresh(true);
+  }, 500);
+
+  return false;
+});
   // Filter item active
   var filterItemActive = $(".ttgr-cat-list > li > a");
   filterItemActive.on("click", function () {
