@@ -3157,6 +3157,26 @@
     }
     return false;
   });
+  $(".scroll-to-top1").on("click", function () {
+    if (!isMobile) {
+      // Not for mobile devices!
+      if ($("body").hasClass("tt-smooth-scroll")) {
+        var $scrollbar1 = Scrollbar.init(
+          document.getElementById("scroll-container")
+        );
+        gsap.to($scrollbar1, {
+          duration: 2,
+          scrollTo: { y: 400, autoKill: true },
+          ease: Expo.easeInOut,
+        });
+      } else {
+        $("html,body").animate({ scrollTop: 0 }, 800);
+      }
+    } else {
+      $("html,body").animate({ scrollTop: 0 }, 800);
+    }
+    return false;
+  });
 
   // =======================================================================================
   // Defer videos (Youtube, Vimeo)
