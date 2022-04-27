@@ -279,3 +279,10 @@ label {
 .tt-ol-submenu-caret {
   color: black !important;
 }
+.element-item {
+  position: none;
+}
+.isotope-item {
+  position: relative !important;
+  top: 0 !important;
+}

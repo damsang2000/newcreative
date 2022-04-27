@@ -1977,7 +1977,7 @@
   $container.imagesLoaded(function () {
     $container.isotope({
       itemSelector: ".isotope-item",
-      layoutMode: "packery",
+      layoutMode: "vertical",
       transitionDuration: "0.7s",
       percentPosition: true,
     });
@@ -1987,6 +1987,11 @@
       ScrollTrigger.refresh(true); // Refresh ScrollTrigger
     }, 500);
   });
+  //custom isotpope
+  // const element_item = document.querySelectorAll(".isotope-item");
+  // element_item.forEach((e) => {
+  //   e.style.position=""
+  // });
 
   // Filter
   $(".ttgr-cat-list > li > a").on("click", function () {
