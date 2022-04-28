@@ -1335,7 +1335,7 @@
           // Parameters
           direction: "horizontal",
           effect: "slide",
-          speed: 600, // slider speed for smaller screens (when window width is 1024px or smaller)
+          speed: 500, // slider speed for smaller screens (when window width is 1024px or smaller)
           parallax: true,
           resistanceRatio: 0,
           longSwipesRatio: 0.02,
@@ -1572,6 +1572,7 @@
           slidesPerView: "auto",
           spaceBetween: 0,
           resistanceRatio: 0.85,
+          draggable: true,
           longSwipesRatio: 0.3,
           shortSwipes: true,
           centeredSlides: true,
@@ -1700,7 +1701,7 @@
                 // Affects the left mouse button only!
                 gsap.to($ttPortfolioCarousel.find(".swiper-slide"), {
                   duration: 0.7,
-                  scale: 0.9,
+                  scale: 0.4,
                 });
               }
             });
@@ -1769,7 +1770,9 @@
           // Parameters
           direction: "horizontal",
           slidesPerView: "auto",
+          slidesPerView: 1.7,
           spaceBetween: 0,
+          draggable: true,
           centeredSlides: true,
           longSwipesRatio: 0.3,
           mousewheel: false,
@@ -1908,6 +1911,7 @@
           slidesPerView: "auto",
           spaceBetween: 0,
           mousewheel: false,
+          slidesPerView: 1.7,
           longSwipesRatio: 0.3,
           grabCursor: true,
           autoHeight: true,
