@@ -589,7 +589,7 @@
       });
 
       // Cursor drag on hover (class "cursor-drag"). For Swiper sliders.
-      $(".swiper-container").each(function () {
+      $(".swiper").each(function () {
         if ($(this).parent().attr("data-simulate-touch") == "true") {
           if ($(this).parent().hasClass("cursor-drag")) {
             $(this)
@@ -634,7 +634,7 @@
       });
 
       // Cursor drag on mouse down / click and hold effect (class "cursor-drag-mouse-down"). For Swiper sliders.
-      $(".swiper-container").each(function () {
+      $(".swiper").each(function () {
         if ($(this).parent().attr("data-simulate-touch") == "true") {
           if ($(this).parent().hasClass("cursor-drag-mouse-down")) {
             $(this)
@@ -692,7 +692,6 @@
 
       // Cursor close on hover.
       $(".cursor-close").each(function () {
-        $(this).addClass("ball-close-enabled");
         $(this)
           .on("mouseenter", function () {
             $ball.addClass("ball-close-enabled");
@@ -1330,15 +1329,15 @@
       // Init Swiper
       // =============
       var $ttPortfolioSliderSwiper = new Swiper(
-        $ttPortfolioSlider.find(".swiper-container")[0],
+        $ttPortfolioSlider.find(".swiper")[0],
         {
           // Parameters
           direction: "horizontal",
           effect: "slide",
-          speed: 500, // slider speed for smaller screens (when window width is 1024px or smaller)
+          speed: 200, // slider speed for smaller screens (when window width is 1024px or smaller)
           parallax: true,
-          resistanceRatio: 0,
-          longSwipesRatio: 0.02,
+          // resistanceRatio: 0,
+          // longSwipesRatio: 0.02,
           preventInteractionOnTransition: true, // No actions during transition
           autoplay: $dataAutoplay,
           mousewheel: $dataMousewheel,
@@ -1565,7 +1564,7 @@
       // Init Swiper
       // =============
       var $ttPortfolioCarouselSwiper = new Swiper(
-        $ttPortfolioCarousel.find(".swiper-container")[0],
+        $ttPortfolioCarousel.find(".swiper")[0],
         {
           // Parameters
           direction: "horizontal",
@@ -1578,7 +1577,7 @@
           centeredSlides: true,
           watchSlidesVisibility: true, // Needed for lazy loading
           preventInteractionOnTransition: false, // No actions during transition
-          speed: 900, // Slider speed for smaller screens (when window width is 1024px or smaller)
+          speed: 500, // Slider speed for smaller screens (when window width is 1024px or smaller)
           keyboard: $dataKeyboard,
           mousewheel: $dataMousewheel,
           autoplay: $dataAutoplay,
@@ -1695,7 +1694,7 @@
       if ($ttPortfolioCarousel.attr("data-simulate-touch") == "true") {
         if ($ttPortfolioCarousel.hasClass("pc-scale-down")) {
           $ttPortfolioCarousel
-            .find(".swiper-container")
+            .find(".swiper")
             .on("mousedown touchstart pointerdown", function (e) {
               if (e.which === 1) {
                 // Affects the left mouse button only!
@@ -1765,7 +1764,7 @@
       // Init Swiper
       // =============
       var $ttContentCarouselSwiper = new Swiper(
-        $ttContentCarousel.find(".swiper-container")[0],
+        $ttContentCarousel.find(".swiper")[0],
         {
           // Parameters
           direction: "horizontal",
@@ -1898,19 +1897,19 @@
       if ($ttTestimonialsSlider.is("[data-speed]")) {
         var $dataSpeed = $ttTestimonialsSlider.data("speed");
       } else {
-        var $dataSpeed = 900; // by default
+        var $dataSpeed = 500; // by default
       }
 
       // Init Swiper
       // =============
       var $ttTestimonialsSliderSwiper = new Swiper(
-        $ttTestimonialsSlider.find(".swiper-container")[0],
+        $ttTestimonialsSlider.find(".swiper")[0],
         {
           // Parameters
           direction: "horizontal",
           slidesPerView: "auto",
           spaceBetween: 0,
-          mousewheel: false,
+          mousewheel: true,
           slidesPerView: 1.7,
           longSwipesRatio: 0.3,
           grabCursor: true,
@@ -2075,7 +2074,7 @@
     width: "100%", // Width of the gallery (ex: '100%' or '300px').
     iframeMaxWidth: "100%", // Set maximum width for iframe.
     loop: true, // If false, will disable the ability to loop back to the beginning of the gallery when on the last element.
-    speed: 600, // Transition duration (in ms).
+    speed: 500, // Transition duration (in ms).
     closable: true, // Allows clicks on dimmer to close gallery.
     escKey: true, // Whether the LightGallery could be closed by pressing the "Esc" key.
     keyPress: true, // Enable keyboard navigation.
