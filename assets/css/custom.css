@@ -316,10 +316,19 @@ label {
   .tt-ol-menu-list > li > .tt-ol-submenu-trigger > a {
     font-size: 40px !important;
   }
+  .title {
+    text-align: center !important;
+  }
+  #page-header.ph-cap-lg .ph-caption-title {
+    font-size: 35px !important;
+  }
 }
 @media (min-width: 768px) {
   .tt-ol-menu-list > li > a,
   .tt-ol-menu-list > li > .tt-ol-submenu-trigger > a {
     font-size: 40px !important;
   }
+}
+.partner-list {
+  text-align: center !important;
 }

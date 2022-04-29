@@ -2622,7 +2622,7 @@ body.ph-share-open {
 
 /* Caption size lg */
 #page-header.ph-cap-lg .ph-caption-title {
-  font-size: clamp(48px, 6vw, 112px);
+  font-size: clamp(48px, 6vw, 100px);
 }
 #page-header.ph-cap-lg .ph-caption-title-ghost {
   padding-top: 5%;
