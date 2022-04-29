@@ -179,6 +179,7 @@ body {
 .bi-item-categories a,
 .tt-blog-post-content p,
 .font-custom,
+.pli-category,
 .tt-pagination {
   font-family: gilroyregular !important;
 }

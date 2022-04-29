@@ -6226,7 +6226,86 @@ iframe.tt-pci-video {
     }
   }
 }
+@media (min-width: 800px) {
+  .tt-pn-link:hover .tt-pn-title {
+    transform: translate3d(-50%, -100%, 0);
+    transition-delay: 0.1s;
+  }
+  .tt-pn-link:hover .tt-pn-hover-title {
+    display: block;
+    transform: translate3d(-50%, 0, 0);
+    transition-delay: 0.1s;
+  }
 
+  /* If the hover title is cloned (have multiple <span>'s) then animate it */
+  .tt-page-nav .tt-pn-hover-title span {
+    display: inline-flex;
+    align-items: center;
+    padding-right: 5vw;
+    animation: marquee 3s linear infinite;
+    animation-play-state: paused;
+  }
+  .tt-page-nav .tt-pn-link:hover .tt-pn-hover-title span {
+    animation: marquee 3s linear infinite;
+    animation-play-state: running;
+  }
+  @-webkit-keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+}
+@media (min-width: 300px) {
+  .tt-pn-link:hover .tt-pn-title {
+    transform: translate3d(-50%, -100%, 0);
+    transition-delay: 0.1s;
+  }
+  .tt-pn-link:hover .tt-pn-hover-title {
+    display: block;
+    transform: translate3d(-50%, 0, 0);
+    transition-delay: 0.1s;
+  }
+
+  /* If the hover title is cloned (have multiple <span>'s) then animate it */
+  .tt-page-nav .tt-pn-hover-title span {
+    display: inline-flex;
+    align-items: center;
+    padding-right: 5vw;
+    animation: marquee 3s linear infinite;
+    animation-play-state: paused;
+  }
+  .tt-page-nav .tt-pn-link:hover .tt-pn-hover-title span {
+    animation: marquee 3s linear infinite;
+    animation-play-state: running;
+  }
+  @-webkit-keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+}
 /* Page nav hover title separator (dot) */
 .tt-pn-hover-title span::after {
   position: absolute;
