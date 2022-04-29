@@ -299,7 +299,7 @@ label {
 .pli-info {
   padding-left: 15% !important;
 }
-@media (max-width: 800px) {
+@media (max-width: 767px) {
   .pli-info {
     padding-left: 0 !important;
   }
@@ -311,5 +311,15 @@ label {
   }
   .page-header-inner {
     padding-bottom: 50px !important;
+  }
+  .tt-ol-menu-list > li > a,
+  .tt-ol-menu-list > li > .tt-ol-submenu-trigger > a {
+    font-size: 40px !important;
+  }
+}
+@media (min-width: 768px) {
+  .tt-ol-menu-list > li > a,
+  .tt-ol-menu-list > li > .tt-ol-submenu-trigger > a {
+    font-size: 40px !important;
   }
 }
