@@ -332,3 +332,13 @@ label {
 .partner-list {
   text-align: center !important;
 }
+@media (min-width: 800px) {
+  .max-width-1000 {
+    max-width: 600px !important;
+  }
+}
+@media (min-width: 1024px) {
+  .max-width-1000 {
+    max-width: 1000px !important;
+  }
+}
