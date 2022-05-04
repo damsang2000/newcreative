@@ -9198,7 +9198,7 @@ body:not(.tt-boxed) .tt-footer-inner,
   color: #888;
 }
 #tt-footer .tt-copyright a {
-  color: #888;
+  color: rgb(3, 3, 3);
 }
 #tt-footer .tt-copyright a:hover {
 }
