@@ -354,3 +354,9 @@ label {
   font-family: gilroymedium !important;
   font-weight: normal !important;
 }
+.custom-caption {
+  bottom: 10% !important;
+}
+.custom-caption1 {
+  bottom: 13% !important;
+}
