@@ -126,6 +126,7 @@ a {
   font-family: grandslang;
   src: url("/assets/img/SVN-GrandSlang/SVN-GrandSlang-Roman.otf");
 }
+
 .ph-title-parallax {
   font-family: grandslang !important;
 }
@@ -142,6 +143,10 @@ h5 {
 @font-face {
   font-family: gilroyregular;
   src: url("/assets/font/SVN-Gilroy\ Regular.otf");
+}
+@font-face {
+  font-family: gilroymedium;
+  src: url("/assets/font/SVN-Gilroy\ Medium.otf");
 }
 body {
   /* font-family: "Poppins", sans-serif; */
@@ -341,4 +346,11 @@ label {
   .max-width-1000 {
     max-width: 1000px !important;
   }
+}
+.tt-scrolling-text {
+  color: black !important;
+}
+.pgi-title {
+  font-family: gilroymedium !important;
+  font-weight: normal !important;
 }
