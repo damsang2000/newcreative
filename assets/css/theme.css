@@ -4327,7 +4327,7 @@ body:not(.is-mobile)
     margin-bottom: 10%;
   }
   .portfolio-list.pl-alter .portfolio-list-item:nth-child(even) .pli-inner {
-    flex-direction: row;
+    flex-direction: row-reverse;
   }
 
   .portfolio-list.pl-alter .portfolio-list-item:nth-child(even) .pli-info {
