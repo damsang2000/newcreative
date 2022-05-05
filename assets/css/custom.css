@@ -356,7 +356,7 @@ label {
   font-weight: normal !important;
 }
 .custom-caption {
-  bottom: 10% !important;
+  bottom: 30px !important;
 }
 .custom-caption1 {
   bottom: 13% !important;
@@ -470,4 +470,3 @@ figure {
 .carousel-fade .active.carousel-item-end {
   transition: opacity 0s 5s !important;
 } */
-
