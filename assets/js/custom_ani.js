@@ -18,3 +18,9 @@
 //     }
 //   });
 // });
+
+
+// const imgdetail = document.querySelector(".img-detail-work");
+// const heighte = document.querySelector(".custom-video");
+// heighte.style.height = "auto";
+// imgdetail.style.clientHeight = "424px";
