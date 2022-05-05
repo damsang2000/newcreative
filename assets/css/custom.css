@@ -406,8 +406,42 @@ figure {
   left: 0;
 }
 .imagesContainer {
-  width: auto;
   height: 100vh;
   position: relative;
   overflow: hidden;
+}
+@media (min-width: 768px) {
+  .imagesContainer {
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+  }
+}
+@media (max-width: 1024px) {
+  .imagesContainer {
+    height: 370px;
+    position: relative;
+    overflow: hidden;
+  }
+}
+@media (min-width: 1025px) {
+  .imagesContainer {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+}
+@media (max-width: 376px) {
+  .imagesContainer {
+    height: 22vh;
+    position: relative;
+    overflow: hidden;
+  }
+}
+@media (max-width: 450px) {
+  .imagesContainer {
+    height: 22vh;
+    position: relative;
+    overflow: hidden;
+  }
 }
