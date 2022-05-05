@@ -304,7 +304,11 @@ label {
 /* .pli-categories-wrap {
   text-align: right !important;
 } */
-
+@media (max-width: 1023px) {
+  .col-sm-12 .vimeo-wrapper {
+    height: 25vh !important;
+  }
+}
 @media (max-width: 767px) {
   .pli-info {
     padding-left: 0 !important;
@@ -327,6 +331,9 @@ label {
   }
   #page-header.ph-cap-lg .ph-caption-title {
     font-size: 35px !important;
+  }
+  .col-sm-12 .vimeo-wrapper {
+    height: 15vh !important;
   }
 }
 @media (min-width: 768px) {
