@@ -390,3 +390,13 @@ figure {
 .vimeo-wrapper {
   height: auto !important;
 } */
+@media (max-width: 1400px) {
+  .custom-scale {
+    scale: 1.01 !important;
+  }
+}
+@media (min-width: 1401px) {
+  .custom-scale {
+    scale: 1.05 !important;
+  }
+}
