@@ -393,3 +393,13 @@ figure {
 .custom-scale {
   transform: scale(1.01) !important;
 }
+.custom-listItem {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.tt-accordion-content:not(.is-open) {
+  display: block !important;
+}
+.pli-counter {
+  top: 50% !important;
+}
