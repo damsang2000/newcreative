@@ -380,100 +380,13 @@ figure {
 .anim-fadeinup > p {
   text-align: center !important;
 }
-/* .anim-fadeinup > p {
-  font-family: grilroyLight !important;
-} */
 
-/* .carousel-fade .carousel-item {
-  animation: animate-fadeinup 1s linear infinite !important;
+.partner-list img {
+  padding: 0 30px !important;
 }
-
-.carousel-fade .carousel-item.active,
-.carousel-fade .carousel-item-next.carousel-item-left,
-.carousel-fade .carousel-item-prev.carousel-item-right {
-  opacity: 1 !important;
+.custom-video {
+  height: 424px !important;
 }
-
-.carousel-fade .active.carousel-item-left,
-.carousel-fade .active.carousel-item-right {
-  opacity: 0 !important;
+.vimeo-wrapper {
+  height: auto !important;
 }
-
-.carousel-fade .carousel-item-next,
-.carousel-fade .carousel-item-prev,
-.carousel-fade .carousel-item.active,
-.carousel-fade .active.carousel-item-left,
-.carousel-fade .active.carousel-item-prev {
-  animation: animate-fadeinup 1s linear infinite !important;
-}
-@keyframes animate-fadeinup {
-  0% {
-    opacity: 1;
-  }
-  17% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-} */
-
-/* .imageDiv:nth-of-type(1) {
-  animation-delay: 1s;
-}
-.imageDiv:nth-of-type(2) {
-  animation-delay: 3s;
-}
-.imageDiv:nth-of-type(3) {
-  animation-delay: 5s;
-} */
-/* .imagesContainer {
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-} */
-/* @media (min-width: 768px) {
-  .imagesContainer {
-    height: 400px;
-    position: relative;
-    overflow: hidden;
-  }
-} */
-/* @media (max-width: 1024px) {
-  .imagesContainer {
-    height: 370px;
-    position: relative;
-    overflow: hidden;
-  }
-}
-@media (min-width: 1025px) {
-  .imagesContainer {
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-  }
-}
-@media (max-width: 376px) {
-  .imagesContainer {
-    height: 22vh;
-    position: relative;
-    overflow: hidden;
-  }
-}
-@media (max-width: 450px) {
-  .imagesContainer {
-    height: 22vh;
-    position: relative;
-    overflow: hidden;
-  }
-} */
-/* .carousel-item {
-  transition: transform 5s ease-in-out !important;
-}
-.carousel-fade .active.carousel-item-start,
-.carousel-fade .active.carousel-item-end {
-  transition: opacity 0s 5s !important;
-} */
