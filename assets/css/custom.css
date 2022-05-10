@@ -433,3 +433,8 @@ figure {
     width: 50% !important;
   }
 }
+@media (max-width: 500px) {
+  .portfolio-list:not(.pli-info-overlay).pl-compact .pli-image-col {
+    max-width: 40% !important;
+  }
+}
