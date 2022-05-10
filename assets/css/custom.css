@@ -441,3 +441,12 @@ figure {
 select option {
   background-color: #a5b8c9 !important;
 }
+.tt-heading-subtitle {
+  color: black !important;
+}
+.custom-caption1 {
+  bottom: 35px !important;
+}
+.tt-ol-menu-toggle-btn-text {
+  padding-left: 5px !important;
+}
