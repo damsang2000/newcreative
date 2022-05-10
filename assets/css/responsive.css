@@ -208,7 +208,10 @@
   }
 
   [class*="mt-"] {
-    margin-top: 15px !important;
+    margin-top: 25px !important;
+  }
+  [class*="mb-"] {
+    margin-bottom: 0px !important;
   }
 
   .next-project {

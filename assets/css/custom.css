@@ -416,3 +416,10 @@ figure {
   flex: 0 0 15% !important;
   max-width: 15% !important;
 }
+/* set width title 50% */
+.width-50 {
+  margin: 0 auto !important;
+}
+.width-50 > p {
+  margin: 0 !important;
+}
