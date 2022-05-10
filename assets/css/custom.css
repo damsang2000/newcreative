@@ -450,3 +450,8 @@ select option {
 .tt-ol-menu-toggle-btn-text {
   padding-left: 5px !important;
 }
+/* tag trang blog post */
+.tt-blog-post-tags,
+.tt-blog-post-share {
+  display: none;
+}

@@ -8617,7 +8617,7 @@ body.is-mobile.tt-sliding-sidebar-open
   .blog-interactive-item::before {
     position: absolute;
     counter-increment: bi-item-counter;
-    content: "" counter(bi-item-counter, decimal-leading-zero);
+    /* content: "" counter(bi-item-counter, decimal-leading-zero); */
     top: 45%;
     right: 0;
     line-height: 1;
