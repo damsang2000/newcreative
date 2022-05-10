@@ -423,3 +423,13 @@ figure {
 .width-50 > p {
   margin: 0 !important;
 }
+@media (min-width: 768px) {
+  .col-md-6 {
+    width: 50% !important;
+  }
+}
+@media (min-width: 1024px) {
+  .col-md-6 {
+    width: 50% !important;
+  }
+}
