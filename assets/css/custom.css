@@ -438,3 +438,6 @@ figure {
     max-width: 40% !important;
   }
 }
+select option {
+  background-color: #a5b8c9 !important;
+}
