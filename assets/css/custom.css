@@ -192,6 +192,7 @@ body {
 .tt-blog-post-content p,
 .font-custom,
 .pli-category,
+.service_content p,
 .tt-pagination {
   font-family: gilroyregular !important;
 }
