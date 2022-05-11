@@ -455,3 +455,13 @@ select option {
 .tt-blog-post-share {
   display: none;
 }
+/* custom service */
+.col-md-3 {
+  text-align: center;
+}
+.service_img {
+  margin-bottom: 50px;
+}
+.service_title {
+  margin-bottom: 20px;
+}
