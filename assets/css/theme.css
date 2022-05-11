@@ -6202,11 +6202,11 @@ iframe.tt-pci-video {
     display: inline-flex;
     align-items: center;
     padding-right: 5vw;
-    animation: marquee 3s linear infinite;
+    animation: marquee 7s linear infinite;
     animation-play-state: paused;
   }
   .tt-page-nav .tt-pn-link:hover .tt-pn-hover-title span {
-    animation: marquee 3s linear infinite;
+    animation: marquee 7s linear infinite;
     animation-play-state: running;
   }
   @-webkit-keyframes marquee {

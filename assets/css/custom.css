@@ -457,11 +457,14 @@ select option {
 }
 /* custom service */
 .col-md-3 {
-  text-align: center;
+  text-align: center !important;
 }
 .service_img {
   margin-bottom: 50px;
 }
 .service_title {
   margin-bottom: 20px;
+}
+.service_content p {
+  margin: 0 auto;
 }
