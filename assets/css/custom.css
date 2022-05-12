@@ -477,3 +477,26 @@ select option {
   font-family: gilroysemibold !important;
   font-weight: 400;
 }
+/* responsive layout create-2 */
+@media (min-width: 3501px) {
+  .tt-grid.ttgr-layout-creative-2 .tt-grid-item:nth-of-type(4n + 1),
+  .tt-grid.ttgr-layout-creative-2 .tt-grid-item:nth-of-type(4n + 4) {
+    width: 58%;
+  }
+
+  .tt-grid.ttgr-layout-creative-2 .tt-grid-item:nth-of-type(4n + 2),
+  .tt-grid.ttgr-layout-creative-2 .tt-grid-item:nth-of-type(4n + 3) {
+    width: 42%;
+    padding-top: 9.8vw;
+  }
+
+  .tt-grid.ttgr-layout-creative-2 .tt-grid-item:last-child:nth-child(odd) {
+    width: 100%;
+    padding: 0 14vw;
+  }
+  .tt-grid.ttgr-layout-creative-2:not(.ttgr-portrait):not(.ttgr-not-cropped)
+    .tt-grid-item:last-child:nth-child(odd)
+    .ttgr-height {
+    padding-bottom: 55%;
+  }
+}
