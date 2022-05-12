@@ -478,7 +478,7 @@ select option {
   font-weight: 400;
 }
 /* responsive layout create-2 */
-@media (min-width: 3501px) {
+/* @media (min-width: 3501px) {
   .tt-grid.ttgr-layout-creative-2 .tt-grid-item:nth-of-type(4n + 1),
   .tt-grid.ttgr-layout-creative-2 .tt-grid-item:nth-of-type(4n + 4) {
     width: 58%;
@@ -499,4 +499,4 @@ select option {
     .ttgr-height {
     padding-bottom: 55%;
   }
-}
+} */
