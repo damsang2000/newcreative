@@ -500,3 +500,6 @@ select option {
     padding-bottom: 55%;
   }
 } */
+.service_content p {
+  color: black !important;
+}
