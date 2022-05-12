@@ -3496,9 +3496,7 @@ body.tt-boxed .tt-wrap .ttgr-height {
   .tt-grid.ttgr-layout-creative-2 .tt-grid-item:nth-of-type(4n + 4) {
     width: 58%;
   }
-  .tt-grid.ttgr-layout-creative-2 .tt-grid-item:nth-of-type(13){
-    width: 58% !important;
-  }
+  
   .tt-grid.ttgr-layout-creative-2 .tt-grid-item:nth-of-type(4n + 2),
   .tt-grid.ttgr-layout-creative-2 .tt-grid-item:nth-of-type(4n + 3) {
     width: 42%;
