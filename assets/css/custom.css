@@ -503,3 +503,11 @@ select option {
 .service_content p {
   color: black !important;
 }
+@media (max-width: 768px) {
+  .col-md-3 {
+    padding-top: 50px;
+  }
+  .service_img {
+    margin-bottom: 20px !important;
+  }
+}
