@@ -555,6 +555,9 @@ select option {
   .service_title p {
     font-size: 25px;
   }
+  .tt-cc-pagination {
+    display: none;
+  }
 }
 @media (min-width: 834px) {
   .service_content p {
