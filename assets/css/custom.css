@@ -589,4 +589,7 @@ select option {
   .service_title p {
     font-size: 40px;
   }
+  .custom-margin{
+    margin-top: 7.6rem;
+  }
 }
