@@ -3245,17 +3245,11 @@
   // E-mail Ajax Send
   $("#tt-contact-form").submit(function () {
     // Change (your contact form ID)
-    var data = {
-      name: $("#name").val(),
-      email: $("#email").val(),
-      subject: $("#subject").val(),
-      option: $("#option").val(),
-      message: $("#message").val(),
-    };
+    var th = $(this);
     $.ajax({
       type: "POST",
       url: "mail.php", // Change (mail.php path)
-      data: data,
+      data: th.serialize(),
     }).done(function () {
       alert("Thank you. Your message has been sent!");
       setTimeout(function () {
