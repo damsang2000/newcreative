@@ -503,11 +503,56 @@ select option {
 .service_content p {
   color: black !important;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .col-md-3 {
     padding-top: 50px;
   }
   .service_img {
     margin-bottom: 20px !important;
+  }
+  .tt-logo-light {
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .ph-title-parallax {
+    font-size: 23px !important;
+  }
+  #sdc-target {
+    padding-top: 0px !important;
+  }
+  .tt-heading {
+    margin-bottom: 10px !important;
+  }
+}
+@media (min-width: 768px) {
+  .service_content p {
+    font-size: 12px;
+  }
+  .service_title p {
+    font-size: 25px;
+  }
+}
+@media (min-width: 834px) {
+  .service_content p {
+    font-size: 13px;
+  }
+  .service_title p {
+    font-size: 28px;
+  }
+}
+@media (min-width: 1024px) {
+  .service_content p {
+    font-size: 16px;
+  }
+  .service_title p {
+    font-size: 35px;
+  }
+}
+@media (min-width: 1280px) {
+  .service_content p {
+    font-size: 18px;
+  }
+  .service_title p {
+    font-size: 40px;
   }
 }
