@@ -523,8 +523,15 @@ select option {
   .tt-heading {
     margin-bottom: 10px !important;
   }
-  .service_img{
+  .service_img {
     margin-bottom: 30px !important;
+  }
+  .custom-height-section {
+    height: 25vh;
+    padding: 0 !important;
+  }
+  .tt-cc-pagination {
+    display: none;
   }
 }
 @media (min-width: 768px) {
