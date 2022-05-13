@@ -1,37 +1,59 @@
+<?php 
 
-<?php
-    //data sent in header are in JSON format
-    header('Content-Type:application/json');
+// ==================================================
+// uniMail - v.1.0.1
+// Universal PHP Mail Feedback Script
+// More info: https://github.com/agragregra/uniMail
+// ==================================================
 
-    //take the value from variable and post the data
-    $name=$_POST['name'];
-    $email=$_POST['email'];
-    $message=$_POST['message'];
-    $subject=$_POST['subject'];
-    $option=$_POST['option'];
-    $to="damsang163@gmail.com";
 
-    //email template
-    $post_message = "<b>Name : </b>". $name ."<br>";
-   $post_message .= "<b>Email Address : </b>".$email."<br>";
-   $post_message .= "<b>Message : </b>".$message."<br>";
+$method = $_SERVER['REQUEST_METHOD'];
 
-   $header = "From:"+$email+" \r\n";
-   $header .= "MIME-Version: 1.0\r\n";
-   $header .= "Content-type: text/html\r\n";
+//Script Foreach
+$c = true;
+if ( $method === 'POST' ) {
 
-   $retval = mail ($to,$subject,$post_message,$header);
-   // message Notification
-   if( $retval == true ) {
-      echo json_encode(array(
-         'success'=> true,
-         'message' => 'Message sent successfully'
-      ));
-   }else {
-      echo json_encode(array(
-         'error'=> true,
-         'message' => 'Error sending message'
-      ));
-   }
+	$project_name = trim($_POST["project_name"]);
+	$admin_email  = trim($_POST["admin_email"]);
+	$form_subject = trim($_POST["form_subject"]);
 
-?>
+	foreach ( $_POST as $key => $value ) {
+		if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
+			$message .= "
+			" . ( ($c = !$c) ? '<tr>':'<tr style="background-color: #f3f3f3;">' ) . "
+			<td style='padding: 10px; border: #e9e9e9 1px solid; width: 100px;'><strong>$key:</strong></td>
+			<td style='padding: 10px; border: #e9e9e9 1px solid;'>$value</td>
+		</tr>
+		";
+	}
+}
+} else if ( $method === 'GET' ) {
+
+	$project_name = trim($_GET["project_name"]);
+	$admin_email  = trim($_GET["admin_email"]);
+	$form_subject = trim($_GET["form_subject"]);
+
+	foreach ( $_GET as $key => $value ) {
+		if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
+			$message .= "
+			" . ( ($c = !$c) ? '<tr>':'<tr style="background-color: #f3f3f3;">' ) . "
+			<td style='padding: 10px; border: #e9e9e9 1px solid; width: 100px;'><strong>$key:</strong></td>
+			<td style='padding: 10px; border: #e9e9e9 1px solid;'>$value</td>
+		</tr>
+		";
+	}
+}
+}
+
+$message = "<table style='width: 100%;'>$message</table>";
+
+function adopt($text) {
+	return '=?UTF-8?B?'.base64_encode($text).'?=';
+}
+
+$headers = "MIME-Version: 1.0" . PHP_EOL .
+"Content-Type: text/html; charset=utf-8" . PHP_EOL .
+'From: '.adopt($project_name).' <'.$admin_email.'>' . PHP_EOL .
+'Reply-To: '.$admin_email.'' . PHP_EOL;
+
+mail($admin_email, adopt($form_subject), $message, $headers );
