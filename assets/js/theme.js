@@ -3188,7 +3188,6 @@
     return false;
   });
 
-
   // =======================================================================================
   // Defer videos (Youtube, Vimeo)
   // Note: When you have embed videos in your webpages it causes your page to load slower.
@@ -3246,11 +3245,17 @@
   // E-mail Ajax Send
   $("#tt-contact-form").submit(function () {
     // Change (your contact form ID)
-    var th = $(this);
+    var data = {
+      name: $("#name").val(),
+      email: $("#email").val(),
+      subject: $("#subject").val(),
+      option: $("#option").val(),
+      message: $("#message").val(),
+    };
     $.ajax({
       type: "POST",
       url: "mail.php", // Change (mail.php path)
-      data: th.serialize(),
+      data: data,
     }).done(function () {
       alert("Thank you. Your message has been sent!");
       setTimeout(function () {
