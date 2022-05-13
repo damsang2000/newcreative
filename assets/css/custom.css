@@ -523,6 +523,9 @@ select option {
   .tt-heading {
     margin-bottom: 10px !important;
   }
+  .service_img{
+    margin-bottom: 30px !important;
+  }
 }
 @media (min-width: 768px) {
   .service_content p {
