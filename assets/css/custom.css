@@ -527,7 +527,7 @@ select option {
     margin-bottom: 30px !important;
   }
   .custom-height-section {
-    height: 15rem;
+    height: 22rem;
     padding: 0 !important;
   }
   .tt-cc-pagination {
@@ -549,7 +549,7 @@ select option {
     font-size: 12px;
   }
   .custom-height-section {
-    height: 35rem;
+    height: 40rem;
     padding: 0 !important;
   }
   .service_title p {
@@ -558,6 +558,7 @@ select option {
   .tt-cc-pagination {
     display: none;
   }
+
 }
 @media (min-width: 834px) {
   .service_content p {
@@ -572,7 +573,7 @@ select option {
     font-size: 16px;
   }
   .custom-height-section {
-    height: 43rem;
+    height: 49rem;
     padding: 0 !important;
   }
   .service_title p {
