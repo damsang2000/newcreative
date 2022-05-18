@@ -558,7 +558,7 @@ select option {
   .tt-cc-pagination {
     display: none;
   }
-  .custom-margin{
+  .custom-margin {
     margin-top: 12rem;
   }
 }
@@ -589,7 +589,13 @@ select option {
   .service_title p {
     font-size: 40px;
   }
-  .custom-margin{
+  .custom-margin {
     margin-top: 7.6rem;
   }
+}
+
+/* custom */
+.pgi-category,
+p {
+  font-size: 16px !important;
 }
