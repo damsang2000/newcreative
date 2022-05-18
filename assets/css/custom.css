@@ -614,3 +614,9 @@ select option {
 .tt-ci-icon {
   color: black !important;
 }
+select {
+  font-size: 14px !important;
+}
+small {
+  font-size: 14px;
+}
