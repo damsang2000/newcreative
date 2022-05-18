@@ -602,3 +602,9 @@ select option {
 .service_title > p {
   font-size: 30px !important;
 }
+.pi-list-heading {
+  font-family: gilroyregular !important;
+}
+.pi-list-cont {
+  font-weight: bold !important;
+}
