@@ -604,7 +604,10 @@ select option {
 }
 .pi-list-heading {
   font-family: gilroyregular !important;
+  font-size: 16px !important;
+  opacity: 1 !important;
 }
 .pi-list-cont {
   font-weight: bold !important;
+  font-size: 16px !important;
 }
