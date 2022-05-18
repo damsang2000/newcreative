@@ -611,3 +611,6 @@ select option {
   font-weight: bold !important;
   font-size: 16px !important;
 }
+.tt-ci-icon {
+  color: black !important;
+}
