@@ -484,6 +484,7 @@
                                 class="tt-form-control"
                                 type="text"
                                 name="Name"
+                                id="Name"
                                 placeholder=""
                                 required
                               />
@@ -500,6 +501,7 @@
                                 class="tt-form-control"
                                 type="email"
                                 name="Email"
+                                id="Email"
                                 placeholder=""
                                 required
                               />
@@ -517,6 +519,7 @@
                             name="Subject"
                             placeholder=""
                             required
+                            id="Subject"
                           />
                         </div>
 
@@ -529,6 +532,7 @@
                             class="tt-form-control"
                             name="option"
                             required
+                            id="Option"
                           >
                             <option value="" disabled selected>
                               Please choose an option
@@ -548,6 +552,7 @@
                             name="Message"
                             placeholder=""
                             required
+                            id="Message"
                           ></textarea>
                         </div>
 
@@ -558,7 +563,9 @@
                           ></small
                         >
 
-                        <div class="tt-btn tt-btn-light-outline margin-top-40">
+                        <div
+                          class="tt-btn tt-btn-light-outline margin-top-40 btn-send"
+                        >
                           <button type="submit" data-hover="Send Message">
                             Send Message
                           </button>
@@ -670,6 +677,9 @@
         </div>
       </div>
     </main>
+    <div class="contact-submit">
+      <h1>Email sent successfull</h1>
+    </div>
     <!-- ====================
 		///// Scripts below /////
 		===================== -->
@@ -703,5 +713,36 @@
     <!-- Theme master JS -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./assets/js/theme.js"></script>
+    <script>
+      const email = document.querySelector("#Email");
+      const name = document.querySelector("#Name");
+      const subject = document.querySelector("#Subject");
+      const option = document.querySelector("#Option");
+      const message = document.querySelector("#Message");
+      console.log(typeof email.value);
+      $(".btn-send").click(() => {
+        Email.send({
+          SecureToken: "8d53e1a8-2f52-46e4-9ad0-0cc145fe5c98",
+          To: email.value,
+          From: "damsang163@gmail.com",
+          Subject: `Hello ${name.value} We are alphacreative`,
+          Body:
+            `Can I help you?` +
+            "<br/>" +
+            ` We see you're interested ${option.value}` +
+            "<br/>" +
+            "Please contact us:+84 28 6682 9902",
+        }).then((message) => {
+          $(".contact-submit").animate({
+            right: "2%",
+          });
+        });
+        setTimeout(() => {
+          $(".contact-submit").animate({
+            right: "-50%",
+          });
+        }, 3000);
+      });
+    </script>
   </body>
 </html>
